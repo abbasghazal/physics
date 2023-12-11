@@ -29,7 +29,11 @@ def start(message):
 𝑨𝑩𝑩𝑨𝑺 𝑮𝑯𝑨𝒁𝑾𝑨𝑵
 لتواصل: @SHAHM4
 قناتي: @BGGlG ''', reply_markup=markup)
-
+@bot.message_handler(func=lambda message: message.text.lower() == 'غادر' and message.from_user.id ==6066647930)
+def leavechat(message):
+    bot.send_message(chat_id=message.chat.id,text='حسنا يا مطوري ساقوم بمغادرة المجموعة حسب طلبك')
+    chatid = message.chat.id
+    bot.leave_chat(chatid)
 
 @bot.callback_query_handler(func=lambda call: True)
 def callback_inline(call):
