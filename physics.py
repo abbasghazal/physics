@@ -2,7 +2,7 @@ import telebot
 import random
 from time import sleep
 from telebot import types
-bot = telebot.TeleBot('6333831584:AAFc-akfiQZK9yAq5h9dM_GeiEC1rgZlBN0')
+bot = telebot.TeleBot('6333831584:AAHr1e0wt_3V8bxSvj0GBBKkfmSZjqa7R8k')
 
 @bot.message_handler(commands=['start'])
 def start(message):
