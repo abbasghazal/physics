@@ -1,1 +1,1 @@
-worker: python3 physics.py
+worker: python3 phy3.py
